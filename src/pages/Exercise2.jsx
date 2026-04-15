@@ -1,17 +1,6 @@
 import { useState } from 'react'
 import ExerciseLayout from '../components/ExerciseLayout'
 
-/*
- * EXERCISE 2 — Add a missing button
- *
- * Below is a simple feedback form with a Name field and a Message field.
- * The form works correctly but the Submit button is missing entirely.
- *
- * TODO: Add a <button> of type "submit" at the bottom of the form.
- *       Style it with Tailwind so it looks like a primary action button.
- *
- * Expected result: a styled "Submit" button appears at the bottom of the form.
- */
 export default function Exercise2() {
   const [submitted, setSubmitted] = useState(false)
 
@@ -49,7 +38,10 @@ export default function Exercise2() {
           />
         </div>
 
-        {/* TODO: add a submit button here */}
+        {/* Button added but: missing type="submit" and uses inline styles instead of Tailwind */}
+        <button style={{ backgroundColor: '#4f46e5', color: 'white', padding: '8px 24px', borderRadius: '8px' }}>
+          Submit
+        </button>
 
         {submitted && (
           <p className="text-green-600 font-medium text-sm">✅ Form submitted successfully!</p>
