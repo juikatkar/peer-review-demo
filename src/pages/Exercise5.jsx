@@ -1,20 +1,8 @@
 import ExerciseLayout from '../components/ExerciseLayout'
 
-/*
- * EXERCISE 5 — Fix the broken style
- *
- * The ProfileCard component below is missing its outer container class.
- * Without it the card has no background, no border, no padding, and no shadow.
- *
- * TODO: Add the following Tailwind classes to the outer <div> of ProfileCard:
- *         bg-white  border  border-gray-200  rounded-2xl  shadow-md  p-6
- *
- * Expected result: a nicely styled white card with a name, role, and bio.
- */
 function ProfileCard({ name, role, bio }) {
   return (
-    // TODO: add the missing Tailwind classes to this div
-    <div>
+    <div className="bg-white border border-gray-200 rounded-2xl shadow-md p-6">
       <div className="flex items-center gap-4 mb-3">
         <div className="w-12 h-12 rounded-full bg-indigo-200 flex items-center justify-center text-indigo-700 text-lg font-bold">
           {name[0]}
