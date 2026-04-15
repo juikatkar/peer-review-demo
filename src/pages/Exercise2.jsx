@@ -49,7 +49,12 @@ export default function Exercise2() {
           />
         </div>
 
-        {/* TODO: add a submit button here */}
+        <button
+          type="submit"
+          className="inline-flex items-center justify-center rounded-full bg-indigo-600 px-6 py-2 text-sm font-semibold text-white shadow-sm transition duration-200 ease-out hover:bg-indigo-700 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2"
+        >
+          Submit
+        </button>
 
         {submitted && (
           <p className="text-green-600 font-medium text-sm">✅ Form submitted successfully!</p>
